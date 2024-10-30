@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Applicant Anonymizer",
+  "version": "1.0",
+  "description": "Blurs and grayscales faces and names on LinkedIn hiring applicant pages.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/hiring/jobs/*/applicants/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
